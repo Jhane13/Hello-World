@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main() {
+
+   int g1,g2,g3,g4,g5,sum, avg;
+   int n=5;
+{
+   printf("Enter first grades:");
+   scanf("%d",&g1);
+   printf("Enter second grades:");
+   scanf("%d",&g2);
+   printf("Enter third grades:");
+   scanf("%d",&g3);
+   printf("Enter four grades:");
+   scanf("%d",&g4);
+   printf("Enter five grades:");
+   scanf("%d",&g5);
+   sum =g1+g2+g3+g4+g5,sum; 
+   printf("Sum is=%d\n",sum);
+   
+  avg = sum / 5;
+  printf("Average:%d\n",avg);
+}
+    return 0;
+}
+
+
+
+    
