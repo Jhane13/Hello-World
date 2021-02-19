@@ -1,0 +1,23 @@
+//program that detertmine if their age eligible for voting using conditional statements.
+#include<stdio.h>
+ void main() {
+    char name, age;
+   int x;//variable for age value.
+    printf("Name:");
+    scanf("%s",&name);
+    printf("\nAge:");
+    scanf("%s",&age);
+ 
+  if(x<18)
+    printf("Your are eligible for voting\n ");
+  else if(x==17)
+    printf("You are not eligible for voting\n");
+  else 
+       printf("Invalid Age,Please try again.");
+    getchar();
+    return 0;
+}
+
+
+
+    
