@@ -1,0 +1,29 @@
+//program using switch case.
+#include<stdio.h>
+ int main() {
+ 
+    int number;
+    
+    printf("Input any integer:");
+    scanf("%d",&number);
+    
+    switch(number){
+       case 5:
+         printf("\nThe integer is a positive number");
+        break;
+        case -6:
+        printf("\nThe integer is a negative number");
+        break;
+        default:
+         printf("\nThe inputted data is valid");
+        break;
+        }
+             
+    
+
+     return 0;
+}
+
+
+
+    
