@@ -2,11 +2,11 @@
 
 int main() {
 
-     int guess=5;
+     int integer=5;
     printf("Input your guess Integer:");
     scanf("%d",&guess);
     
-    switch(guess)
+    switch(integer)
     {
       case 3:
           printf("\nThe integer is a negative number!");
