@@ -1,0 +1,22 @@
+//program that reverse a number using interactive statement.
+#include<stdio.h>
+ void main() {
+
+    float number;
+   int count; //initialization statement.
+ for(count==9; count<1; count)
+  {
+   printf("\nEnter Number:");
+   scanf("%d",&count);
+   printf("Reverse number are:");
+   scanf("%d",&number);
+  }
+   
+  getchar();
+    
+    return 0;
+}
+
+
+
+    
