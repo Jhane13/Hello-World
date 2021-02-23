@@ -1,0 +1,37 @@
+//program using arithmetic operator 
+#include<stdio.h>
+ int main() {
+  
+     int a=16,b=4,add,mul,div,sub;
+    {
+    printf("Enter 2 integer:");
+    scanf("%d",&a,&b);
+    add=a+b;
+    printf("a+b= %d\n",add);
+    mul=a*b;
+    printf("a*b= %d\n",mul);
+    div=a/b;
+    printf("a/b= %d\n",div);
+    sub=a-b;
+    printf("a-b= %d\n",sub);
+    }
+   int c=15,d=10,sum,quotient,division, subtraction;
+    {
+    printf("Enter any 2 integer:15 10\n");
+    scanf("%d",&c,&d);
+    sum=c+d;
+    printf("c+d= %d\n",sum);
+    quotient=c*d;
+    printf("c*d= %d\n",quotient);
+    division=c/d;
+    printf("c/d= %d \n", division);
+    subtraction=c-d;
+    printf("c-d= %d \n",subtraction);
+    }
+    
+    return 0;
+}
+
+
+
+    
