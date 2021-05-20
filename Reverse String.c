@@ -1,37 +1,56 @@
-//Programs that reverse the word.
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
+#define MAX_SIZE 100 // Maximum string size
 
 int main()
 {
-     char arr1[30],arr2[60];
-    int i=0,j=0;
-    printf("Enter the string:");
-    gets(arr1);
-    while(arr1[i]!='\0')
+    char str[100], reverse[100];
+    int len, i, index, wordStart, wordEnd;
+
+    printf("Enter any string: ");
+    gets(str);
+
+    len   = strlen(str);
+    index = 0;
+
+    // Start checking of words from the end of string
+    wordStart = len - 1;
+    wordEnd   = len - 1;
+
+    while(wordStart > 0)
     {
-    i++;
-    }
-    while(i>0)
-    {
-    arr2[j]=arr1 [--i];
-     ++j;
-    }
-    
-    arr2[j]='\0';
-    printf("Reverse String:");
-    for(i=0; arr2[i]!='\0';i++)
-    {
-     if(arr2[i+1]==' ' || arr2[i+1]=='\0')
-    {
-     for(j=i; j>=0 && arr2[j]!=' ';j--)
-    {
-    printf("%c",arr2[j]);
-    }
-    printf(" ");
-    }
+        // If a word is found
+        if(str[wordStart] == ' ')
+        {
+            // Add the word to the reverse string
+            i = wordStart + 1;
+            while(i <= wordEnd)
+            {
+                reverse[index] = str[i];
+
+                i++;
+                index++;
+            }
+            reverse[index++] = ' ';
+
+            wordEnd = wordStart - 1;
+        }
+
+        wordStart--;
     }
 
+    // Finally add the last word
+    for(i=0; i<=wordEnd; i++)
+    {
+        reverse[index] = str[i];
+        index++;
+    }
+
+    // Add NULL character at the end of reverse string
+    reverse[index] = '\0'; 
+
+    printf("Original string \n%s\n\n", str);
+    printf("Reverse ordered words \n%s", reverse);
 
     return 0;
 }
